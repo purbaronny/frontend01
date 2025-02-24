@@ -1,0 +1,27 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const chicken_1 = require("./chicken");
+const circle_util_1 = require("./com/purwadhika/circle_util");
+const util_1 = require("./com/purwadhika/util");
+console.log("hello");
+const chicken = new chicken_1.Chicken();
+chicken.cluck();
+const util = new util_1.Util();
+const length = 5;
+const width = 3;
+const area = util.getRectangleArea(length, width);
+console.log(`Area of the rectangle: ${area}`);
+const circle = new circle_util_1.CircleUtil();
+const radius = 5;
+console.log(`Diameter: ${circle.getDiameter(radius)}`);
+console.log(`Circumference: ${circle.getCircumference(radius).toFixed(4)}`);
+console.log(`Area: ${circle.getArea(radius).toFixed(4)}`);
+const a = 80;
+const b = 65;
+console.log(`Third angle: ${util.getThirdAngle(a, b)}`);
+const date1 = "2024-03-19";
+const date2 = "2024-03-21";
+console.log(`Difference in days: ${util.getDateDifference(date1, date2)}`);
+const name = "John Doe";
+console.log(`Initials: ${util.getInitials(name)}`);
+//# sourceMappingURL=index.js.map
